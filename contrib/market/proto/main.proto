@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package = "github.com/noncepad/echo-market/proto/testecho";
+
+package testecho;
+
+service TestEcho{
+    rpc Echo(EchoRequest) returns (EchoResponse) {}
+    rpc Feed(stream EchoRequest) returns (stream EchoResponse) {}
+}
+
+
+message EchoRequest{
+    string body = 1;
+}
+
+
+message EchoResponse{
+    string body = 1;
+}

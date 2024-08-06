@@ -1,0 +1,2 @@
+This API allows a developer to take a request and Echo the same response.
+Rate throttling occurs by bytes per second.
